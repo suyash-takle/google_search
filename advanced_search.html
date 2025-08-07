@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="static/logo_fevicon.ico">
+    </head>
+    <body>
+        <div class = "header">
+            <a href="index.html">Google Search</a>
+        </div>
+        <form action="https://www.google.com/search">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="find">Find pages with...</th>
+                    <th scope="col"> </th>
+                    <th scope="col" class="find_info">To do this in the search box.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row" class = "find">all these words: </th>
+                <td><input type="text" name="as_q" autofocus="autofocus" class = "find_inp"></td>
+                <td><p class="find_info" >Type the important words: tri-colour rat terrier</p></td>
+                </tr>
+                <tr>
+                <th scope="row" class = "find">this exact word or phrase: </th>
+                <td><input type="text" name="as_epq" class = "find_inp"></td>
+                <td><p class="find_info" >Put exact words in quotes: "rat terrier"</p></td>
+                </tr>
+                <tr>
+                <th scope="row" class = "find">any of these words: </th>
+                <td><input type="text" name="as_oq" class = "find_inp"></td>
+                <td><p class="find_info">Type OR between all the words you want: miniature OR standard</p></td>
+                </tr>
+                <tr>
+                <th class = "find" scope="row">none of these words: </th>
+                <td><input type="text" name="as_eq" class = "find_inp"></td>
+                <td><p class="find_info" >Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</p></td>
+                </tr>
+                <tr>
+                <th scope="row" class = "find" >numbers ranging from: </th>
+                <td><input type="text" name="as_nlo"  class = "find_inp"> to <input type="text" name="as_nhi"  class = "find_inp"> </td>
+                <td><p class="find_info">Put two full stops between the numbers and add a unit of measurement:<br> 10..35 kg, £300..£500, 2010..2011</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type = "submit" value="Advanced Search" class="button_advanced">
+        </form>
+    </body>
+</html>
